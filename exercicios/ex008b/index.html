@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Citações e Códigos</title>
+    <!--Esta é uma aula do curso em vídeo do professor Gustavo Guanabara, com algumas alterações pessoais minhas."Citações e Códigos" Link:
+    https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24 -->
 </head>
 <body>
-    <a href="https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24">https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24</a>
+    <h1>Outras Formatações</h1>
+    <h2>Código-Fonte</h2>
+    <h3>Tag Code</h3>
+    <p>aprendemos que a tag &lt;code&gt; permite escrever o código, para mostrar no terminal, sem executar o código. obs: ele não herda as quebras de linhas e demais organizações. exemplo:</p>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <p>Agora utilizaremos a tag code com um código de Python.</p>
+    <code>
+        num = int(imput('Digite um número'))
+        if num % 2 == 0:
+            print(f'0 número {num} é PAR')
+        else:
+            print(f'0 número {num} é ÍMPAR')
+        print('Fim do programa')
+    </code>
+    <h3>Tag Pre</h3>
+    <p>Agora utilizaremos em conjunto a tag code com a tag pre. A tag pre herda a indentação, logo tudo será considerado. Por exemplo:</p>
+<code>
+    <pre>
+        num = int(imput('Digite um número'))
+        if num % 2 == 0:
+            print(f'0 número {num} é PAR')
+        else:
+            print(f'0 número {num} é ÍMPAR')
+        print('Fim do programa')
+    </pre>
+</code>
+    <p>apesar de não ser a forma recomendada, podemos curiosamente usar a tag pre para substituir a tag br, para quebrar linhas. exemplo:</p>
+    <pre>
+        teste
+
+
+        teste
+    </pre>
+    <!--Citações Simples, sem quebras semânticas-->
+    <h2>Citações Simples, sem quebras semânticas:</h2>
+    <p>Como dizia Chorão: <q>Muitos sabem quem eu sou, mas poucos me conhecem</q> </p>
+    <p>neste exemplo acima, usamos a tag q de quote para dar o sentido de uma citação. ficou assim:
+<pre>
+    <code>
+        &lt;p&gt;
+            Como dizia Chorão: &lt;q&gt;Muitos sabem quem eu sou, mas poucos me conhecem&lt;/q&gt;
+        &lt;/p&gt;
+    </code>
+</pre>
+<!--Citações de blocos, uma tag blockquote-->
+<h2>Citações de blocos, uma tag blockquote</h2>
+<p>Esta tag aparece deslocada horizontalmente á direita e é direcionada para um determinado autor. Além disso, podemos adicionar um parâmetro "cite", que apesar de não ser exibido no terminal, serve como mecanismo de busca. Pode ser colocado por exemplo, link de venda ou mesmo garantir os direitos daqueles que produzem conteúdos</p>
+<p>Segundo Jeff Nobble, no seu libro HTML para leigos:</p>
+<blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y">
+    A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML eneste capítulo descrevem blocos de texto.
+</blockquote>
+<h2>Abreviações</h2>
+<p>a tag &lt;abbr&gt; mostra um popup, normalmente para designar o significado de algo, ou mesmo de uma sigla, ao passar o cursor sobre determinada palavra; por exemplo:</p>
+<p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou curtindo muito!</p>
+<h2>Texto invertido:</h2>
+<p>É usada a tag &lt;bdo&gt; para inverter o texto, sendo o parâmetro dir=<abbr title="direita para esquerda">rtl</abbr> ou dir=<abbr title="esquerda para direita">ltr</abbr></p>
+<p><bdo dir="rtl">Estou invertendo este texo</bdo>
+</p>
+
 </body>
 </html>
