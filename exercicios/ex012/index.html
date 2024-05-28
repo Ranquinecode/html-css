@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+</head>
+<body>
+    <hr> <!--Colocando um vídeo em hospedagem interna-->
+    <h1>Um vídeo em hospedagem local</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video controls loop preload="metadata" width="560" height="315" poster="imagens/amanda/amanda-1.jpg">
+        <source src="media/rato.mp4" type="video/mp4">
+        <source src="media/rato.webm" type="video/webm">
+        <source src="media/rato.ogv" type="video/ogg">
+    </video> 
+    <hr>
+    <p>Foi adicionado os atributos: 
+        <ul>
+            <li>controls: para fazer aparecer os botoes de controle </li>
+            <li>loop: para fazer loop infinito</li>
+            <li>preload=metadata: para carregar apenas as informações sem fazer o download do arquivo ao carregar a página </li>
+            <li>width=560: para determinar a largura do tamanho do video </li>
+            <li>height=315: para determinar a altura do tamanho do video </li>
+            <li>poster: para carregar uma imagem para ser exibida como thumbmail do video.</li>
+        </ul>
+    </p>
+    <hr> <!--Um vídeo do Youtube-->
+    <h1>Um vídeo do Youtube</h1>
+    <p>Este vídeo está hospedado em um servidor externo (YouTube)</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/j4jYI2PE0_c?si=lECoSy344gPHIjKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+
+    <h1>Este é um vídeo do Vimeo</h1>
+    <p>Este vídeo está hospedado em um servidor externo (Vimeo)</p>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/929824958?h=3eb6a365ec" width="560" height="315" frameborder="0"    allowfullscreen></iframe>
+    <hr>
+</body>
+</html>
