@@ -3,7 +3,6 @@
 Links para os exercícios:
 <ol>​​
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex001/">ex001</a>Primeiro código HTML</li>
-    <li>< p>< a href="https://ranquinecode.github.io/html-css/exercicios/ex001/">ex001</a>  Primeiro código HTML </p> </li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex002/">ex002</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex003/">ex003</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex004/">ex004</a></li>
