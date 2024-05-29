@@ -11,7 +11,8 @@ Links para os exercícios:
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex007/">ex007</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex008/">ex008</a></li>
      <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex008b/">ex008b</a></li>
-    <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex009/">ex009</a></li>
+    <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex009/index.html/">ex009</a></li>
+    C:\Users\Administrador\Documents\estudos\html-css\exercicios\ex009\index.html
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex010/index1.html/">ex010</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex010/index1.html/">ex010</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex011/">ex011</a></li>
