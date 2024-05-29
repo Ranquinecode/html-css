@@ -10,6 +10,7 @@ Links para os exercícios:
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex006/">ex006</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex007/">ex007</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex008/">ex008</a></li>
+     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex008b/">ex008</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex009/">ex009</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex010/">ex010</a></li>
     <li><a href="https://ranquinecode.github.io/html-css/exercicios/ex011/">ex011</a></li>
