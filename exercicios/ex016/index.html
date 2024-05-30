@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Nesse exercício, veremos as formas como as cores podem ser representadas em seu estilo -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS</title>
+</head>
+<body style="background-color: lightgreen;">
+    <h1>Cores em CSS</h1>
+    <p>Para entender esse exercício, olhe bem atentamente o código fonte do arquivo.</p>
+    <h2 style="background-color: black; color: white;">Este título está colorido usando cores por nome</h2>
+    <h2 style="background-color: #000000; color: #ffffff;">Já esse está usando cores pelo código Hexadecimal</h2>
+    <h2 style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">Este outro está colorido usando códigos RGB (red, green, blue)</h2>
+    <h2 style="background-color: hsl(0, 0%, 0%); color: hsl(0, 0%, 100%);">Este outro aqui está usando códigos HSL (hue, saturation, light)</h2>
+    <p>As cores resultantes são exatamente as mesmas, mas o formato de representação muda conforme o padrão escolhido.</p>
+    <p>Também é possível usar transparência, usando o formato RGBA (red, green, blue, alpha)</p>
+    <h2 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Nesse título, o fundo preto teve sua transparência configurada para 50%</h2>
+<!--Esta parte de cima foi um copia e cola, mudando apenas a cor azul para preto-->
+    <h1>Esta imagem encontra-se presente no PDF do curso</h1>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/p-sentimento-cor.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px )" srcset="imagens/m-sentimento-cor.jpg" type="image/jpeg"> 
+        <img src="imagens/g-sentimento-cor.jpg" alt="">
+    </picture>
+</body>
+</html>

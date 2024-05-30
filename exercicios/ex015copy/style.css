@@ -1,22 +1,62 @@
 @charset "UTF-8";
 
+
 body {
-    background-color: #1b0d01;
+    background-color: #1B0D01;
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
 }
 
 h1 {
-    color: #D09E71;
-    background-color: rgba(218, 165, 32, 0.075);
+    color: #f3e9df;
+    background-color: #291803;
     font-size: 20px;
 }
 
 h2 {
-    color: #512E10;
+    color: #D09E71;
 }
 
 p {
     color: #FFD4AD;
     text-align: justify;
+}
+
+footer
+{background-color: #000000;
+}
+
+footer p
+{color: #C9B895;
+text-align:center;
+position: bottom;
+font-size: 15px;
+}
+
+#linkaula
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#pagina
+{
+    text-align: right;
+    font-size: 15px;
+    background-color: #693902;
+}
+
+a
+{
+    color: aliceblue;
+    text-decoration:underline;
+    text-align: center;
+}
+
+#iframe-container {
+    text-align: center; /* Centraliza o conteúdo do contêiner horizontalmente */
+}
+
+#iframe-container iframe {
+    display: inline-block; /* Define o iframe para ser exibido como bloco */
 }
