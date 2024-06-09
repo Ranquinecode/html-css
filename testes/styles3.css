@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.menu-icon {
+    display: none; /* O ícone do menu não é exibido em telas grandes */
+}
+main {
+    padding: 20px;
+    overflow: hidden; /* Impede que as seções sejam maiores do que a tela */
+}
+section {
+    margin-bottom: 40px;
+    height: 100vh; /* Define a altura da seção como 100% da altura da tela */
+    display: flex; /* Usa flexbox para centralizar o conteúdo verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* O ícone do menu é exibido em telas menores */
+        text-align: right;
+        cursor: pointer;
+        padding: 20px;
+    }
+    nav {
+        display: none; /* O menu não é exibido inicialmente em telas menores */
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        z-index: 1; /* Garante que o menu sobreponha outros elementos */
+    }
+    nav.show {
+        display: block; /* Mostra o menu quando o ícone do menu é clicado */
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+    section {
+        height: calc(100vh - 60px); /* Leva em consideração a altura do cabeçalho */
+    }
+}

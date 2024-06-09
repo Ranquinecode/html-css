@@ -1,0 +1,172 @@
+/* Estilos para o cabeçalho principal do site */
+.main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #ff6f61;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adicionando margem inferior para separar do próximo elemento */
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.main-header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Estilos para os cabeçalhos das seções */
+.section-header {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para links */
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Estilos para bordas arredondadas */
+header, section {
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Estilos para hover em seções */
+section:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para hover em links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    max-width: 80vw; /* Largura máxima de 70vw */
+    margin: 0 auto; /* Centralizar o conteúdo */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura e altura */
+    padding: 20px;
+}
+
+/* Estilos para o layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para botões */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e6523f;
+}
+
+/* Estilos para ícones */
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+/* Estilos para espaçamento */
+.spacer {
+    height: 40px;
+}
+
+/* Estilos para responsividade */
+@media screen and (max-width: 768px) {
+        .container {
+        padding: 10px;
+        }
+    .main-header h1 {
+        font-size: 1.3em;
+    }
+    .main-header nav ul li a {
+        font-size: 1em;
+    }
+    .section-header h2 {
+        font-size: 1.5em;
+    }
+    section p {
+        font-size: 1em;
+    }
+    body {
+        max-width: 95vw; /* Reduzir a largura máxima para telas menores */
+        padding: 3px;
+    }
+}
+

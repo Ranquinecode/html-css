@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburguer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            transition: top 0.5s ease;
+            top: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 2;
+            top: -100%;
+            transition: top 0.5s ease;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .menu-icon {
+            display: block;
+            text-align: center; /* Centraliza o ícone horizontalmente */
+            cursor: pointer;
+            padding: 8px; /* Reduz o preenchimento para ajustar o tamanho do botão */
+            position: fixed;
+            z-index: 3;
+            top: 20px;
+            right: 20px;
+            border: 2px solid #000; /* Adiciona borda preta */
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+
+        input[type="checkbox"]:checked ~ nav {
+            top: 0;
+        }
+
+        input[type="checkbox"]:not(:checked) ~ nav {
+            top: -100%;
+        }
+
+        input[type="checkbox"]:checked ~ .menu-icon {
+            border-color: #fff;
+        }
+
+        input[type="checkbox"]:checked ~ .menu-icon:before {
+            background-color: #fff;
+        }
+
+        input[type="checkbox"]:not(:checked) ~ .menu-icon {
+            border-color: #000; /* Adiciona borda preta quando desmarcado */
+        }
+
+        nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        section {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media screen and (max-width: 768px) and (min-height: 768px) {
+            .menu-icon {
+                display: none;
+            }
+            nav {
+                z-index: 3;
+            }
+            section {
+                min-height: calc(100vh - 60px);
+            }
+            nav a {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            nav a {
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<input type="checkbox" id="toggle-menu">
+<label for="toggle-menu" class="menu-icon">☰</label>
+<header>
+    <h1>Menu Hamburguer</h1>
+</header>
+<nav>
+    <a href="#section1">Seção 1</a>
+    <a href="#section2">Seção 2</a>
+    <a href="#section3">Seção 3</a>
+</nav>
+<main>
+    <section id="section1">
+        <h2>Seção 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+    </section>
+    <section id="section2">
+        <h2>Seção 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+    </section>
+    <section id="section3">
+        <h2>Seção 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+    </section>
+</main>
+<footer>
+    <p>Footer</p>
+</footer>
+</body>
+</html>
