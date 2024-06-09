@@ -36,8 +36,23 @@
             transition: top 0.5s ease;
         }
 
-        input[type="checkbox"] {
-            display: none;
+        input[type="checkbox"]:checked ~ nav {
+            top: 0;
+        }
+
+        input[type="checkbox"]:not(:checked) ~ nav {
+            top: -100%;
+        }
+
+        nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .menu-icon {
@@ -53,14 +68,6 @@
             border-radius: 10px; /* Bordas arredondadas */
         }
 
-        input[type="checkbox"]:checked ~ nav {
-            top: 0;
-        }
-
-        input[type="checkbox"]:not(:checked) ~ nav {
-            top: -100%;
-        }
-
         input[type="checkbox"]:checked ~ .menu-icon {
             border-color: #fff;
         }
@@ -71,17 +78,6 @@
 
         input[type="checkbox"]:not(:checked) ~ .menu-icon {
             border-color: #000; /* Adiciona borda preta quando desmarcado */
-        }
-
-        nav a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            margin-bottom: 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
         }
 
         main {
@@ -130,6 +126,19 @@
                 margin-right: 20px;
             }
         }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ header {
+            top: -100px;
+        }
+
+        input[type="checkbox"]:not(:checked) ~ header {
+            top: 0;
+        }
+
     </style>
 </head>
 <body>
